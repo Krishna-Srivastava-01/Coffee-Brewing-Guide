@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=Yanone+Kaffeesatz:wght@200..700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            border: 0;
+            background-color: rgb(0, 17, 40);
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            border-bottom: burlywood 1px solid;
+            background-color:rgb(0, 17, 40) ;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        nav img{
+            width: 90px;
+            margin-left: 10px ;
+            margin-top: 10px;
+        }
+        nav div.nav{
+            color: rgb(213,162,82);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:600;
+            justify-self: center;
+            text-shadow: 1px 1px rgb(116, 87, 16);
+            
+        }
+        div.main{
+            text-align: center;
+            background-image: url(images/maincoffeebeans.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 2px solid burlywood;
+            height: 600px;
+        }
+        div.m1{
+            padding: 150px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,100px);
+            align-items: center;
+        }
+        div.m1 h2{
+            color: rgb(211, 156, 68);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 900;
+            margin-top: 0;
+            text-shadow: 1px 1px black;
+        }
+        div.m1 h3,p{
+            color: rgb(199, 150, 97);
+            text-shadow: 2px 2px black;
+        }
+        div.m1 h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div.m1 p{
+            margin: 100px;
+        }
+        div.coffeebeans{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 30px;
+
+        }
+        .card{
+            color: rgb(201, 143, 91);
+            text-shadow: 0.5px 0.5px black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .card h1{
+            color: rgb(209, 155, 40);
+            justify-self: center;
+            font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            margin-left: 20px;
+            object-fit: cover;
+            grid-row: span 2;
+        }
+        .brewing{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7,1fr);
+        }
+        .brew-container{
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 0.2fr 2fr;
+            color: burlywood;
+            border: 2px solid burlywood;
+        }
+        .brew-container img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+        .brew-container h2,h3{
+            color: rgb(211,156,68);
+        }
+        .brew-container:hover{
+            background-color: rgb(40, 23, 10);
+        }
+        footer{
+            margin-top: 20px;
+            border-top: 5px solid burlywood;
+            text-align: center;
+            color: rgb(213,162,82);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/coffeelogo.webp" alt="logo">
+            <div class="nav">
+                <h1>COFFEE BREWING GUIDE</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div class="m1">
+            <h2><u>WELCOME TO COFFEE 101</u></h2>
+            <h3>Your ultimate guide for brerwing the perfect coffee.<br>
+            These guides serve as a good place to start.</h3>
+            <p>The grinder you use, coffee you choose, and yes, even the water from your sink, can alter the taste in the cup.<br>Every machine is different, so you'll want to think of these parameters more as guidelines than law.</p>
+            </div>
+        </div>
+        <div class="m2">
+            <h1 style="color: rgb(211, 156, 68); margin-left: 20px;"><u>TYPES OF COFFEE BEANS :-</u></h1>
+            <p style="margin-left: 20px;">Firstly let us know about the various types of coffee beans.</p>
+            <div class="coffeebeans">
+                <div class="card" >
+                    <img src="images/arabica.webp" alt="" width="100px">
+                    <h1><u>ARABICA</u></h1>
+                    <ul><li>Origin: Ethiopia (now grown mainly in Latin America, East Africa, and Asia)</li>
+                        <li>Flavor: Smooth, mild, and slightly sweet; often has fruity or floral notes</li>
+                        <li>Caffeine content: Lower (about 0.8–1.5%)</li>
+                        <li>Altitude: Grows best at high altitudes (600–2000 m)</li>
+                        <li>Characteristics:
+                            <ul>
+                                <li>Most popular type — accounts for ~60–70% of global coffee production</li>
+                                <li>High-quality and aromatic</li>
+                                <li>More expensive to grow (sensitive to pests and climate)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" >
+                    <img src="images/robusta.jpg" alt="" width="100px">
+                    <h1><u>ROBUSTA</u></h1>
+                    <ul><li>Origin: Sub-Saharan Africa (widely grown in Vietnam, Brazil, and Indonesia)</li>
+                        <li>Flavor: Strong, earthy, and bitter with nutty or woody undertones</li>
+                        <li>Caffeine content: Higher (1.7–3%)</li>
+                        <li>Altitude: Grows at lower altitudes (200–800 m)</li>
+                        <li>Characteristics:
+                            <ul>
+                                <li>Hardier plant—resistant to pests and harsh climates</li>
+                                <li>Produces more crema (used in espresso blends)</li>
+                                <li>Cheaper and more caffeinated than Arabica</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" >
+                    <img src="images/liberica.jpg" alt="" width="100px">
+                    <h1><u>LIBERICA</u></h1>
+                    <ul><li>Origin: Liberia (West Africa); now found in the Philippines, Malaysia, and Indonesia</li>
+                        <li>Flavor: Unique — floral, woody, smoky, sometimes fruity</li>
+                        <li>Caffeine content: Moderate (~1.2%)</li>
+                        <li>Bean shape: Larger and asymmetrical compared to Arabica or Robusta</li>
+                        <li>Characteristics:
+                            <ul>
+                                <li>Rare—less than 2% of global production</li>
+                                <li>Has a distinctive aroma, often described as “woody” or “fruity”</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" >
+                    <img src="images/excelsa.webp" alt="" width="100px">
+                    <h1><u>EXCELSA</u></h1>
+                    <ul><li>Origin: Central Africa; grows in Southeast Asia</li>
+                        <li>Flavor: Tart, fruity, complex with both light and dark notes</li>
+                        <li>Caffeine content: Similar to Liberica</li>
+                        <li>Adds complexity, depth, and brightness when blended with other beans.</li>
+                        <li>Characteristics:
+                            <ul>
+                                <li>Used mostly in blends to add depth and complexity</li>
+                                <li>Grows on tall trees (up to 20–30 ft)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1 style="color: rgb(211, 156, 68); margin-left: 20px;"><u>METHODS OF BREWING COFFEE :-</u></h1>
+            <div class="brewing">
+                <div class="brew-container">
+                    <h2>FRENCH PRESS :</h2>
+                    <h3>The classic French Press is known for its ability to brew a consistent, heavy bodied black coffee.</h3>
+                    <img src="images/frenchpress.jpg" alt="french_press">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>French Press</li>
+                            <li>20g coffee (approximately 3 tablespoons)</li>
+                            <li>240ml water (2 teaspoons less than 1 cup) at 94°C (1:50 minutes off the boil)</li>
+                            <li>Tablespoon</li>
+                            <li>Cup</li>
+                            <li>Kettle</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Add 20g of coffee into your French Press.</li>
+                            <li>Pour 40ml of hot water.</li>
+                            <li>Stir 10 times to wet the ground coffee, and leave it for 30 seconds on the timer.</li>
+                            <li>Pour the remaining water.</li>
+                            <li>Add the lid and leave for 3 more minutes.</li>
+                            <li>Stir a few times until the grinds fall to the bottom.</li>
+                            <li>Then, very slowly, plunge over 1 minute.</li>
+                            <li>Serve into cups straight away to avoid over extracting the coffee.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>MOKA POT :</h2>
+                    <h3>The Moka Pot is a straightforward way of making a rich, strong brew over a stove. A Moka Pot is a compact and affordable brewer that gives you a concentrated dose of coffee, rather than an espresso replacement. </h3>
+                    <img src="images/mokapot.jpg" alt="moka-pot">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Moka Pot</li>
+                            <li>12g coffee (approximately 6 teaspoons) in Moka Pot grind </li>
+                            <li>100ml water (1.5 tablespoons less than ½ cup) at 30-40°C (¾ cold water + ¼ boiling water)</li>
+                            <li>Tablespoon</li>
+                            <li>Cup</li>
+                            <li>Kettle</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Add 100ml warm water to the lower chamber of your Moka Pot. </li>
+                            <li>Place the filter basket onto your lower chamber.</li>
+                            <li>Add 12g coffee in the filter basket.</li>
+                            <li>Screw the upper chamber and lower chamber together.</li>
+                            <li>Heat on medium until you hear a gurgling sound, or when you see the water has finished bubbling through.</li>
+                            <li>Immediately pour into your cup.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>ESPRESSO:</h2>
+                    <h3>Espressos are the foundation of a cafe, serving as the base for the cappuccinos, lattes and americanos that are commonly served. Arguably, one of the most complicated and difficult brewing methods available, changes in humidity, coffee age, roast level and water are just some of the variables that have to be accounted for to brew a good shot.</h3>
+                    <img src="images/espresso.webp" alt="espresso">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Espresso machine</li>
+                            <li>15g coffee (2.5 teaspoons) in espresso grind</li>
+                            <li>Cup</li>
+                            <li>Scales</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Top up the water tank of your espresso machine.</li>
+                            <li>Place the coffee in your portafilter and gently tamp to even out the coffee grinds and create a compact bed of grinds by pushing down evenly.</li>
+                            <li>Place the portafilter into the espresso machine and turn on the machine. Brew for 35s.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>COLD BREW :</h2>
+                    <h3>Our summer favourite, cold brews are perfect for those who like to sip on smooth, chocolatey coffee with low acidity.</h3>
+                    <img src="images/coldbrew.jpg" alt="cold-brew">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Vessel (ideally 1 litre or larger).</li>
+                            <li>Filter (muslin cloth or pour over cone + filter paper will work just fine)</li>
+                            <li>100g coffee in cold brew grind (approximately. 1 cup)</li>
+                            <li>Spoon</li>
+                            <li>1 litre filtered water (4 cups) at room temperature</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Place your coffee grinds into your vessel.</li>
+                            <li>Pour in half the quantity of water.</li>
+                            <li>Stir well until all the grinds are wet.</li>
+                            <li>Pour remainder of water, stir once more.</li>
+                            <li>Add lid/wrap and rest at room temperature.</li>
+                            <li>After 16 hours, strain through a filter.</li>
+                            <li>Refrigerate.</li>
+                            <li>Drink black or with milk.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>POUR OVER :</h2>
+                    <h3>Pour Overs are a great way to brew a complex and delicate cup. This is a versatile brewing equipment that allows control over all of the key variables of brewing - dose, grind, temperature and time.</h3>
+                    <img src="images/pourover.webp" alt="pour-over">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Pour Over cone</li>
+                            <li>Pour Over filter paper</li>
+                            <li>16g coffee (approximately 2 tablespoons) in pour over grind</li>
+                            <li>240ml water (2 teaspoons less than 1 cup) at 92°C (approximately 3:45 minutes off the boil)<li>
+                            <li>Tablespoon</li>
+                            <li>Cup</li>
+                            <li>Kettle</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Fold seam of filter paper, place in cone and rinse with hot water over your cup. </li>
+                            <li>Discard this water, and place the cone back on the cup. </li>
+                            <li>Add 16g of coffee into your filter.</li>
+                            <li>Pour 60ml of hot water over the grinds — the bubbles you see are called the bloom.</li>
+                            <li>Stir 3 times to lightly mix the coffee grinds, and leave for 30 seconds.</li>
+                            <li>Pour 60ml of water every 30 seconds until you have poured 240ml.</li>
+                            <li>Let the brew drip through the filter. </li>
+                            <li>At 3 minutes, take the filter cone off your coffee cup. The water should have just finished dripping through. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>AERO PRESS :</h2>
+                    <h3>Portable and lightweight, the AeroPress is a great travel companion and can brew a full-bodied cup wherever you are.</h3>
+                    <img src="images/aeropress.webp" alt="aero-press">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Aeropress</li>
+                            <li>Aeropress filter</li>
+                            <li>17g coffee (approximately 8.5 teaspoons) in AeroPress grind</li>
+                            <li>230ml water (1.5 tablespoon less than 1 cup) at 90°C (5:30 minutes off boil)<li>
+                            <li>Tablespoon</li>
+                            <li>Cup</li>
+                            <li>Kettle</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Add 17g coffee. </li>
+                            <li>Add 80ml of 90℃ water and start a timer.</li>
+                            <li>Stir a few times to wet all the grinds and leave for 20 seconds.</li>
+                            <li>Add the remaining water and vacuum seal the AeroPress.</li>
+                            <li>After 90 seconds on the timer, press down evenly and gradually for 30-50 seconds, until you hear a hissing sound.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brew-container">
+                    <h2>CHANNI :</h2>
+                    <h3>Easy and cheap, channi coffee is great for people who are new to brewing coffee at home and don't have any equipment. All you need is a tea strainer!</h3>
+                    <img src="images/channi.webp" alt="channi">
+                    <div>
+                        <h2>What you’ll need:</h2>
+                        <ul>
+                            <li>Channi / Strainer</li>
+                            <li>14g (approximately 7 teaspoons) coffee in coarse, channi grind </li>
+                            <li>140ml water (½ cup + 1 tablespoon) at 94°C (approximately 1:50 minutes off the boil)</li>
+                            <li>230ml water (1.5 tablespoon less than 1 cup) at 90°C (5:30 minutes off boil)<li>
+                            <li>Tablespoon</li>
+                            <li>Cup</li>
+                            <li>Kettle</li>
+                        </ul>
+                        <h2>Brewing recipe :</h2>
+                        <ul>
+                            <li>Add 14g coffee to your cup.</li>
+                            <li>Add 130ml hot water.</li>
+                            <li>Leave for 4 minutes.</li>
+                            <li>At 4 minutes, stir 10 times. </li>
+                            <li>Pour brew through channi into another cup. </li>
+                            <li>Add more of the remaining hot water, or milk to your preference.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <h1>Some days you make the coffee, other days the coffee makes you</h1>
+    </footer>
+</body>
+</html>
